@@ -10,5 +10,4 @@ USER root
 #    && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 #
 # More information: https://www.gitpod.io/docs/42_config_docker/
-RUN pip3 install flask \
-    && apt install -y mysql-server
+RUN pip3 install flask
