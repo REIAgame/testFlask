@@ -11,4 +11,4 @@ USER root
 #
 # More information: https://www.gitpod.io/docs/42_config_docker/
 RUN pip3 install flask \
-    && apt install mysql-server
+    && apt install -y mysql-server
