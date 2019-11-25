@@ -15,10 +15,3 @@ RUN apt -q -y upgrade
 RUN apt -q -y update
 RUN apt -q -y install mysql-server
 
-# mysql
-ADD mysql/charset.cnf /etc/mysql/conf.d/
-RUN mysql_install_db
-RUN chown -R mysql:mysql /var/lib/mysql
-ADD mysql/startup.sh /startup.sh
-RUN chmod 755 /startup.sh
-RUN ./startup.sh
