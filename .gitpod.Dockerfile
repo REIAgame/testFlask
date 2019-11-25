@@ -10,5 +10,5 @@ USER root
 #    && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 #
 # More information: https://www.gitpod.io/docs/42_config_docker/
-RUN pip3 install flask
-RUN passwd -d root
+RUN pip3 install flask \
+  && passwd -d root
