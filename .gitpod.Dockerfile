@@ -14,5 +14,5 @@ RUN pip3 install flask
 RUN apt -q -y upgrade
 RUN apt -q -y update
 RUN apt -q -y install mysql-server
-RUN touch mysqlf.log
-RUN dir /var/log/mysql/
+RUN touch /mysqlf.log
+RUN dir /var/log/mysql/ > /mysqlf.log
