@@ -8,3 +8,8 @@ ports:
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/44_config_start_tasks/
 tasks:
 - command: mysql < chat.ddl
+
+vscode:
+  extensions:
+    - MS-CEINTL.vscode-language-pack-ja@1.40.2:7SaGOBMnLJG+jAP7x4UnvQ==
+    - brapifra.phpserver@2.4.6:Z8EZmsr47jQ9kn1QaRk/Xg==
