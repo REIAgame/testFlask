@@ -6,5 +6,5 @@ create table if not exists chatHist(
     age int,
     primary key(id)
 );
-create user chat identified by 'chatu';
+create user chat@localhost identified by 'chatu';
 grant all ON testChat.* to chat@localhost;
