@@ -1,4 +1,5 @@
 create database if not exists testChat;
+use testChat;
 create table if not exists chatHist(
     id int not null auto_increment,
     name char(30),
